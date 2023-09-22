@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js Task 5</title>
-    <style>table{margin-top: 15%;}*{font-size: x-large;}td{text-align: right;}input{float: left;padding: 5px;}</style>
+    <style>table{margin-top: 15%;}*{font-size: x-large;}td{text-align: right;}input{float: left;padding: 5px;}span{display: flex;justify-items: start;}</style>
     <script>
         function validate(){
             name=document.getElementById("name").value;
@@ -16,7 +16,9 @@
                 cnt++;
                 document.getElementById("namemsg").innerText="This field is required";
                 document.getElementById("namemsg").style.color="red";
+                document.getElementById("namemsg").style.textAlign="left";
                 document.getElementById("name").style.borderColor="red";
+
             }
             else{
                 document.getElementById("namemsg").innerText="";
@@ -26,6 +28,7 @@
                 cnt++;
                 document.getElementById("emailmsg").innerText="A valid email address is required";
                 document.getElementById("emailmsg").style.color="red";
+                document.getElementById("emailmsg").style.textAlign="left";
                 document.getElementById("email").style.borderColor="red";
             }
             else{
@@ -36,6 +39,7 @@
                 cnt++;
                 document.getElementById("urlmsg").innerText="This valid url is required";
                 document.getElementById("urlmsg").style.color="red";
+                document.getElementById("urlmsg").style.textAlign="left";
                 document.getElementById("url").style.borderColor="red";
             }
             else{
@@ -46,6 +50,7 @@
                 cnt++;
                 document.getElementById("errmsg").innerText="This field is required";
                 document.getElementById("errmsg").style.color="red";
+                document.getElementById("errmsg").style.textAlign="left";
                 document.getElementById("msg").style.borderColor="red";
             }
             else{
