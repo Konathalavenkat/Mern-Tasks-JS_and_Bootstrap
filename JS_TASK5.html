@@ -24,7 +24,7 @@
             }
             if(!email.match(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/)){
                 cnt++;
-                document.getElementById("emailmsg").innerText="This field is required";
+                document.getElementById("emailmsg").innerText="A valid email address is required";
                 document.getElementById("emailmsg").style.color="red";
                 document.getElementById("email").style.borderColor="red";
             }
@@ -34,7 +34,7 @@
             }
             if(!url.match(/(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/)){
                 cnt++;
-                document.getElementById("urlmsg").innerText="This field is required";
+                document.getElementById("urlmsg").innerText="This valid url is required";
                 document.getElementById("urlmsg").style.color="red";
                 document.getElementById("url").style.borderColor="red";
             }
