@@ -139,16 +139,16 @@
     <form action="index.html" onsubmit="return validate()">
         <table cellspacing="10px" align="center">
 
-            <tr><th>First Name</th><td><input type="text" name="fname" id="fname" size="76"></td><td id="fnamemsg"></td></tr>
-            <tr><th>Last Name</th><td><input type="text" name="lname" id="lname" size="76"></td><td id="lnamemsg"></td></tr>
-            <tr><th>Email</th><td><input type="text" name="email" id="email" size="76"></td><td id="emailmsg"></td></tr>
-            <tr><th>Password</th><td><input type="password" name="pwd" id="pwd" size="76"></td><td id="pwdmsg"></td></tr>
-            <tr><th>Re-enter Password</th><td><input type="password" name="repwd" id="repwd" size="76"></td><td id="repwdmsg"></td></tr>
-            <tr><th>Gender</th><td><input type="radio" name="gender" value="Male" checked="checked">Male <br><input type="radio" name="gender" value="Female">Female</td><td id="gendermsg"></td></tr>
-            <tr><th>Age</th><td><input type="text" name="age" id="age" size="76"></td><td id="agemsg"></td></tr>
-            <tr><th>Phone Number</th><td><input type="text" name="phno" id="phno" size="76"></td><td id="phnomsg"></td></tr>
-            <tr><th>Address</th><td><textarea name="addr" id="addr" cols="72" rows="6"></textarea></td><td id="addrmsg"></td></tr>
-            <tr><th>State</th><td><input type="text" name="state" id="state" size="76"></td><td id="statemsg"></td></tr>
+            <tr><th>First Name</th><td><input onkeyup="validate()" type="text" name="fname" id="fname" size="76"></td><td id="fnamemsg"></td></tr>
+            <tr><th>Last Name</th><td><input onkeyup="validate()" type="text" name="lname" id="lname" size="76"></td><td id="lnamemsg"></td></tr>
+            <tr><th>Email</th><td><input onkeyup="validate()" type="text" name="email" id="email" size="76"></td><td id="emailmsg"></td></tr>
+            <tr><th>Password</th><td><input onkeyup="validate()" type="password" name="pwd" id="pwd" size="76"></td><td id="pwdmsg"></td></tr>
+            <tr><th>Re-enter Password</th><td><input onkeyup="validate()" type="password" name="repwd" id="repwd" size="76"></td><td id="repwdmsg"></td></tr>
+            <tr><th>Gender</th><td><input onkeyup="validate()" type="radio" name="gender" value="Male" checked="checked">Male <br><input onkeyup="validate()" type="radio" name="gender" value="Female">Female</td><td id="gendermsg"></td></tr>
+            <tr><th>Age</th><td><input onkeyup="validate()" type="text" name="age" id="age" size="76"></td><td id="agemsg"></td></tr>
+            <tr><th>Phone Number</th><td><input onkeyup="validate()" type="text" name="phno" id="phno" size="76"></td><td id="phnomsg"></td></tr>
+            <tr><th>Address</th><td><textarea onkeyup="validate()" name="addr" id="addr" cols="72" rows="6"></textarea></td><td id="addrmsg"></td></tr>
+            <tr><th>State</th><td><input onkeyup="validate()" type="text" name="state" id="state" size="76"></td><td id="statemsg"></td></tr>
             <tr><th>Country</th><td><select name="country" id="country">
                 <option value="def">Choose your country</option>
                 <option value="India">India</option>
@@ -162,4 +162,5 @@
         </table>
     </form>
 </body>
+<script>validate();</script>
 </html>
